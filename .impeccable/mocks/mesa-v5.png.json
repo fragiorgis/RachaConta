@@ -1,0 +1,13 @@
+{
+  "name": "RachaConta — letreiro de buteco e confirmação à direita",
+  "approved": true,
+  "approved_on": "2026-10-09",
+  "approval_evidence": "Usuário: AGORA FICOU LEGAL MUITO BOM",
+  "tool": "image_gen__imagegen",
+  "prompt": "Use case: precise-object-edit / ui-mockup. Edit the attached two-screen RachaConta Android design with TWO targeted refinements: the brand logo and the confirmation checkbox placement. Keep the warm ivory and pale buttery-yellow palette, warm brown readable text, rounded pill buttons, simple form, spacing, content and two-screen workflow. Render two finished portrait screens side by side, each 390 x 844 logical pixels. App content only, no device frame or OS bars.\n\nBrand refinement: replace the generic large rounded wordmark with a compact bespoke Brazilian boteco sign logo. “RachaConta” uses friendly hand-painted lettering with slightly bouncy baselines and varied rounded strokes, still clearly legible. Integrate two SMALL playful caricature illustrations of iconic copo americano glasses, recognizable fluted sides, tilted gently toward each other like friends meeting, in pale yellow with warm brown outlines. These are part of the logo, not a scene. No faces, characters, table, chairs, beer brands, bottle imagery, slogans, ornate banner, grain, extra patterns or scattered doodles. Give the logo the relaxed character of a neighborhood boteco; keep all functional typography clean sans and unchanged.\n\nResult refinement: MOVE every checkbox to the FAR RIGHT of its person's row as the final confirmation action. Three columns only: person and a quiet text state at left, amount in the middle/right, native rounded-square checkbox at the far right with 48dp tappable area. Row 1: “Pessoa 1”, state “Pago” below name, “R$ 33,33”, checked pale-yellow checkbox with dark check. Row 2: “Pessoa 2”, “Pendente” below name, “R$ 33,33”, unchecked checkbox. Row 3: “Pessoa 3”, “Pendente” below name, “R$ 33,34”, unchecked checkbox. Remove the old right-side state pills and left checkboxes. Subtle dividers, aligned amounts, ample breathing room.\n\nPreserve form: “Dividir conta”, “Valor da conta”, R$100,00, “Pessoas”, minus 3 plus, “Nome do encontro (opcional)”, Pizza de sexta, “Dividir”, “Usar exemplo”. Preserve result: back arrow, “Pizza de sexta”, Total R$100,00, “Por pessoa”, “1 de 3 pagos”, “Editar conta”. No service percentages, centavo explanations or new features.",
+  "source": "/Users/felipe/.codex/generated_images/01a11d9e-935e-7161-a0ff-13a27505c9c8/exec-979ae792-c555-4522-b64e-a35da8e428de.png",
+  "references": [
+    "mesa-v4.png"
+  ],
+  "supersedes": "mesa-v4.png"
+}

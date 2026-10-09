@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RachaConta</string>
+    <string name="divide_title">Dividir conta</string>
+    <string name="bill_label">Valor da conta</string>
+    <string name="amount_hint">0,00</string>
+    <string name="currency_prefix">R$</string>
+    <string name="people_label">Pessoas</string>
+    <string name="less_people">Diminuir pessoas</string>
+    <string name="more_people">Aumentar pessoas</string>
+    <string name="people_number">%1$d</string>
+    <plurals name="people_count"><item quantity="one">%1$d pessoa</item><item quantity="other">%1$d pessoas</item></plurals>
+    <string name="one_person">1 pessoa</string>
+    <string name="meeting_label">Nome do encontro (opcional)</string>
+    <string name="meeting_hint">Ex.: Pizza de sexta</string>
+    <string name="divide_action">Dividir</string>
+    <string name="example_action">Usar exemplo</string>
+    <string name="default_meeting">Conta da turma</string>
+    <string name="total_label">Total</string>
+    <string name="per_person">Por pessoa</string>
+    <string name="person_name">Pessoa %1$d</string>
+    <string name="paid">Pago</string>
+    <string name="pending">Pendente</string>
+    <plurals name="paid_progress"><item quantity="one">%1$d de %2$d pago</item><item quantity="other">%1$d de %2$d pagos</item></plurals>
+    <string name="edit_action">Editar conta</string>
+    <string name="back">Voltar</string>
+    <string name="payment_description">Pessoa %1$d, %2$s, confirmar pagamento</string>
+    <string name="invalid_amount">Informe um valor entre R$ 0,01 e R$ 99.999,99.</string>
+    <string name="invalid_name">Use até 40 caracteres para o nome.</string>
+</resources>

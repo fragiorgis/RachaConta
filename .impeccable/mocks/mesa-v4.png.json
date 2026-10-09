@@ -1,0 +1,14 @@
+{
+  "name": "RachaConta — amarelo claro e acerto por pessoa",
+  "approved": false,
+  "tool": "image_gen__imagegen",
+  "prompt": "Use case: ui-mockup / style-transfer edit. Refine the attached RachaConta Android app into a simpler, friendly Brazilian university bill-splitting UI. Preserve the two-screen workflow but apply the user's changes exactly. Produce one finished coherent design with TWO app screens side by side, each at a 390 x 844 logical portrait viewport. App content edge to edge, no phone frames, OS bars or external captions.\n\nPalette: pale buttery YELLOW is the sole brand accent, replacing every dark-green and orange element. Soft ivory background, pale-yellow controls and rounded primary buttons; warm charcoal/brown for readable text, never green, orange or blue. Avoid low-contrast yellow lettering on ivory. Contemporary rounded sans, moderate weight; a compact personable “RachaConta” wordmark. Big easy buttons with fully rounded ends, 56dp height, minimum 48dp touch areas. Plenty of whitespace, subtle divisions, no nested cards.\n\nREMOVE the literal table and chairs entirely, all illustrations, handwritten slogans, service/tip percentage controls, the service breakdown and “Os centavos fecham o total.” The boteco reference informs the buttery-yellow color and gentle rounded forms ONLY. No decor that competes with the task.\n\nLeft screen: compact “RachaConta” header, “Dividir conta”, label “Valor da conta” and editable “R$ 100,00”; label “Pessoas” with large circular pale-yellow minus and plus around 3; label “Nome do encontro (opcional)” and editable “Pizza de sexta”. Primary rounded pale-yellow button “Dividir”. Quiet text action “Usar exemplo”. Do not invent extra fields. Keep balanced whitespace rather than filling it with decoration.\n\nRight screen: back arrow, “Pizza de sexta”, succinct “Total R$ 100,00”, heading “Por pessoa”. An aligned flat list of THREE individual rows, each with a large tappable native checkbox, person's generic label, exact individual share, and short state: checked “Pessoa 1” “R$ 33,33” “Pago”; unchecked “Pessoa 2” “R$ 33,33” “Pendente”; unchecked “Pessoa 3” “R$ 33,34” “Pendente”. Checked state uses yellow fill with dark check, no green. This is manual payment tracking per person; no banking. Below, concise “1 de 3 pagos”. Bottom rounded pale-yellow “Editar conta”. All labels crisp Portuguese, intuitive native controls.",
+  "source": "/Users/felipe/.codex/generated_images/01a11d9e-935e-7161-a0ff-13a27505c9c8/exec-aa94ac3d-f1f9-43ef-afe6-3e0206b655d5.png",
+  "references": [
+    "mesa-v2.png"
+  ],
+  "supersedes": [
+    "mesa-v2.png",
+    "mesa-v3.png"
+  ]
+}

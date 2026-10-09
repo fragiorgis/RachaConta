@@ -1,0 +1,10 @@
+<resources>
+    <color name="cream">#FFFDF6</color>
+    <color name="yellow">#FFE784</color>
+    <color name="brown">#3B2519</color>
+    <color name="secondary_text">#746052</color>
+    <color name="outline">#9D8C7B</color>
+    <color name="divider">#E8E0D6</color>
+    <color name="field_surface">#FFFEFA</color>
+    <color name="error">#A32929</color>
+</resources>

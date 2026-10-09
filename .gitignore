@@ -1,0 +1,13 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.impeccable/build/
+.impeccable/references/
+.impeccable/questions/
+.impeccable/review/
+*.hprof

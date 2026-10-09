@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="action_height">56dp</dimen>
+    <dimen name="body_size">16sp</dimen>
+    <dimen name="heading_size">28sp</dimen>
+    <dimen name="amount_size">36sp</dimen>
+</resources>

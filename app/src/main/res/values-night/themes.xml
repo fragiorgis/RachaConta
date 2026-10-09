@@ -1,0 +1,18 @@
+<resources>
+    <style name="Theme.RachaConta" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="colorSurface">@color/cream</item>
+        <item name="colorOnSurface">@color/brown</item>
+        <item name="colorOnSurfaceVariant">@color/secondary_text</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorOnPrimary">#3B2519</item>
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:fontFamily">@font/nunito_variable</item>
+        <item name="fontFamily">@font/nunito_variable</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>
