@@ -14,7 +14,8 @@ object FormatoDinheiro {
         val normalizado = if (decimalComPonto.matches(entrada)) entrada.replace('.', ',') else entrada
         if (!formatoBrasileiro.matches(normalizado)) return null
         val partes = normalizado.replace(".", "").split(',')
-        val reais = partes[0].toLongOrNull() ?: return null
+        // Limitar antes da multiplicação também impede overflow em entradas agrupadas enormes.
+        val reais = partes[0].toLongOrNull()?.takeIf { it <= 99_999 } ?: return null
         val centavos = partes.getOrNull(1)?.padEnd(2, '0')?.toLongOrNull() ?: 0L
         return (reais * 100 + centavos).takeIf { it in 1..9_999_999 }
     }

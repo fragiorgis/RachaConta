@@ -14,11 +14,11 @@ Data: 09/10/2026. Escopo: etapa 1 da avaliação parcial, com Kotlin e Android V
 | Verificação | Resultado |
 | --- | --- |
 | Compilação APK debug | Aprovada |
-| JUnit: cálculo, moeda, validação e imutabilidade | 10 testes, zero falhas |
+| JUnit: cálculo, moeda, validação e imutabilidade | 11 testes, zero falhas |
 | Espresso: fluxo completo no emulador | 7 testes, zero falhas |
 | Android Lint debug | Sem erros impeditivos |
 
-Os testes locais verificam a soma exata em centavos, diferenças de no máximo um centavo entre parcelas, 300 combinações de valores/grupos, limites, nome opcional e atualização imutável de pagamento.
+Os testes locais verificam a soma exata em centavos, diferenças de no máximo um centavo entre parcelas, 300 combinações de valores/grupos, limites, entradas enormes sem overflow, nome opcional e atualização imutável de pagamento.
 
 Os testes instrumentados verificam entrada inválida, exemplo, Intent com dados, divisão, marcar/desmarcar, voltar com campos preservados, recriação das duas telas, uma pessoa, nome ausente e 50 pessoas com rolagem/reciclagem das linhas. IDs estáveis preservam a marcação da pessoa correta ao rolar.
 
@@ -47,7 +47,7 @@ A revisão independente do design teve veredito **ship** após verificar fidelid
 
 ## Reprodução independente
 
-A validação de clone limpo será registrada após sua execução.
+O projeto foi clonado do repositório Git para uma pasta nova, sem local.properties, caches ou builds copiados. Com JAVA_HOME e ANDROID_HOME apontando para JDK/SDK instalados, o Gradle gerou o APK e executou testes locais, lint e os sete testes instrumentados. Nenhuma edição de código ou configuração versionada foi necessária. O teste de regressão adicional para valores enormes também integra a validação final.
 
 ## Limites observados
 

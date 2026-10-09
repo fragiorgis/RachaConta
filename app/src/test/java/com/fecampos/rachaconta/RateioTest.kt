@@ -49,6 +49,11 @@ class RateioTest {
             assertNull(it, FormatoDinheiro.interpretar(it))
         }
     }
+    @Test fun rejeitaValoresGrandesSemOverflow() {
+        listOf("184.467.440.737.095.517,00", "9.223.372.036.854.775.807,99", "999.999.999.999.999.999.999,00").forEach {
+            assertNull(it, FormatoDinheiro.interpretar(it))
+        }
+    }
     @Test fun formataEmReaisComCentavos() {
         assertEquals("R$ 33,33", FormatoDinheiro.formatar(3333))
         assertEquals("R$ 99.999,99", FormatoDinheiro.formatar(9999999))
