@@ -7,11 +7,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.widget.doAfterTextChanged
 import com.fecampos.rachaconta.R
-import com.fecampos.rachaconta.data.ContasExemplo
 import com.fecampos.rachaconta.databinding.ActivityDividirContaBinding
 import com.fecampos.rachaconta.domain.ValidadorConta
 import com.fecampos.rachaconta.navigation.NavegacaoConta
-import com.fecampos.rachaconta.util.FormatoDinheiro
 
 class DividirContaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDividirContaBinding
@@ -28,7 +26,6 @@ class DividirContaActivity : AppCompatActivity() {
         binding.lessButton.setOnClickListener { pessoas = (pessoas - 1).coerceAtLeast(1); updateUI() }
         binding.moreButton.setOnClickListener { pessoas = (pessoas + 1).coerceAtMost(50); updateUI() }
         binding.divideButton.setOnClickListener { dividir() }
-        binding.exampleButton.setOnClickListener { usarExemplo() }
         binding.amountInput.doAfterTextChanged { binding.amountLayout.error = null }
         binding.nameInput.doAfterTextChanged { binding.nameLayout.error = null }
         binding.nameInput.setOnEditorActionListener { _, action, _ ->
@@ -42,17 +39,6 @@ class DividirContaActivity : AppCompatActivity() {
         binding.peopleCount.contentDescription = if (pessoas == 1) getString(R.string.one_person) else resources.getQuantityString(R.plurals.people_count, pessoas, pessoas)
         binding.lessButton.isEnabled = pessoas > 1
         binding.moreButton.isEnabled = pessoas < 50
-    }
-
-    private fun usarExemplo() {
-        val conta = ContasExemplo.pizzaDeSexta
-        pessoas = conta.quantidadePessoas
-        binding.amountInput.setText(FormatoDinheiro.paraEntrada(conta.valorCentavos))
-        binding.nameInput.setText(conta.nomeEncontro)
-        binding.amountInput.clearFocus()
-        binding.nameInput.clearFocus()
-        WindowInsetsControllerCompat(window, binding.root).hide(WindowInsetsCompat.Type.ime())
-        updateUI()
     }
 
     private fun dividir() {

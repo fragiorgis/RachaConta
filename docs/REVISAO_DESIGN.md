@@ -13,3 +13,7 @@ Três achados foram encerrados:
 Os PNGs mantêm seus pixels originais: apenas metadados foram adicionados. A interface usa controles Android em XML, sem imagem de tela como substituto dos campos, botões ou confirmações.
 
 Sistema implementado: [DESIGN.md](../DESIGN.md). Evidências: [VALIDACAO.md](VALIDACAO.md).
+
+## Formulário simplificado
+
+Após a solicitação de remover Usar exemplo, a revisão independente confirmou a remoção integral da função e do componente, a ação Dividir acessível e os requisitos da etapa 1 preservados. Veredito: **ship**. Os 11 testes unitários e sete instrumentados passaram com entrada manual; os participantes fictícios permanecem simulados localmente.

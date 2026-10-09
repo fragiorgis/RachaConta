@@ -14,7 +14,7 @@ O check é um registro manual local de que a parte foi acertada. A marcação n�
 
 ## Telas
 
-- Formulário: RachaConta, Dividir conta, valor, controle menos/mais de pessoas, nome opcional, Dividir e ação discreta Usar exemplo.
+- Formulário: RachaConta, Dividir conta, valor, controle menos/mais de pessoas, nome opcional, Dividir.
 - Resultado: voltar, nome do encontro ou Conta da turma quando ausente, total, Por pessoa, lista individual com pessoa/estado à esquerda, valor e checkbox de confirmação à direita, contador de pagos e Editar conta.
 - Lista rolável para grupos grandes. Marcar deve funcionar ao tocar na linha ou no check, com semântica acessível de checkbox e sem alternância dupla.
 - Erros próximos aos campos; teclado decimal no valor; campos não cobertos pelo teclado. Botões com área mínima de toque de 48dp, preferencialmente altura de 56dp.
@@ -34,13 +34,13 @@ Referência aprovada: ../.impeccable/mocks/mesa-v5.png. Prompt exato: ../.impecc
 
 ## Kotlin e XML previstos
 
-- DividirContaActivity e activity_dividir_conta.xml: entrada, validação, pessoas, exemplo, Intent.
+- DividirContaActivity e activity_dividir_conta.xml: entrada, validação, pessoas, Intent.
 - ResultadoActivity e activity_resultado.xml: cálculo, linhas individuais, checks e contador.
 - component_parcela_pessoa.xml: linha reutilizável inflada com ViewBinding, contendo checkbox, pessoa, valor e estado. Bindings atualizados por updateUI.
 - Conta: data class imutável com valorCentavos: Long, quantidadePessoas: Int e nomeEncontro: String?.
 - ParcelaPessoa: data class imutável com id: Int, valorCentavos: Long e pago: Boolean. Pessoa N deriva do id estável.
 - ResultadoRateio: totalCentavos e lista de parcelas. Atualização de marcação por copy, gerando lista nova.
-- CalculadoraRateio, ValidadorConta, FormatoDinheiro, NavegacaoConta e ContasExemplo mantêm as responsabilidades definidas no plano inicial, retirando argumentos de serviço.
+- CalculadoraRateio, ValidadorConta, FormatoDinheiro e NavegacaoConta mantêm as responsabilidades definidas no plano inicial, retirando argumentos de serviço.
 - Intent envia apenas valor, quantidade e nome opcional. Checks são estado da tela de resultado.
 
 ## Cálculo e verificação
@@ -49,4 +49,4 @@ Usar Long em centavos. Para total T e N pessoas, base = T / N e resto = T % N. D
 
 Validar valor positivo até R$ 99.999,99, pessoas entre 1 e 50, nome opcional até 40 caracteres. Nome em branco vira null. Preservar conversão decimal brasileira sem ponto flutuante para dinheiro.
 
-Verificar soma exata, diferenças de no máximo um centavo, 1/3/50 pessoas, marcação reversível independente, contador, voltar/editar, rotação, teclado, rolagem e texto ampliado. O exemplo local cumpre o uso de dados simulados. As duas telas, Intent, ViewBinding, modelos imutáveis e interação dos checks cumprem a etapa 1. Compose continua fora da entrega.
+Verificar soma exata, diferenças de no máximo um centavo, 1/3/50 pessoas, marcação reversível independente, contador, voltar/editar, rotação, teclado, rolagem e texto ampliado. Os participantes fictícios locais (Pessoa 1 até Pessoa N) representam os dados simulados. As duas telas, Intent, ViewBinding, modelos imutáveis e interação dos checks cumprem a etapa 1. Compose continua fora da entrega.

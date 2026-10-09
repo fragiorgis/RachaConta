@@ -25,6 +25,10 @@ Conta e ParcelaPessoa possuem propriedades val. ResultadoRateio.marcarPagamento 
 
 onSaveInstanceState salva entradas no formulário e ids pagos no resultado. O Android também restaura o estado da lista. Ao dividir novamente, nasce outro resultado, com todos pendentes. Não há persistência entre encerramentos do processo.
 
+## Dados simulados
+
+Os participantes são fictícios: CalculadoraRateio cria ids de 1 até N; o adapter usa esses ids para exibir Pessoa 1, Pessoa 2 etc. Não há cadastro de pessoas nem consulta externa. O valor e a quantidade vêm do formulário; as parcelas são calculadas em centavos. A ação de preencher uma conta de exemplo foi removida a pedido do usuário.
+
 ## Lista e eventos
 
 Cada linha é component_parcela_pessoa.xml inflado com ViewBinding. Pessoa/estado ficam à esquerda, valor no meio e checkbox no extremo direito. Tocando a linha, performClick encaminha a ação ao checkbox.

@@ -48,7 +48,7 @@ Cores e proporções finais devem ser amostradas da referência aprovada. As med
 
 ## Organização de código
 
-- ui/DividirContaActivity.kt: formulário, exemplo, pessoas, validação e abertura do resultado.
+- ui/DividirContaActivity.kt: formulário, pessoas, validação e abertura do resultado.
 - ui/ResultadoActivity.kt: recebe os dados, apresenta parcelas, pagamentos e retorno para edição.
 - ui/ParcelaPessoaAdapter.kt: linha reutilizável, binding e evento de confirmação por id estável.
 - model/Conta.kt: valorCentavos, quantidadePessoas e nomeEncontro opcional; propriedades val.
@@ -58,14 +58,14 @@ Cores e proporções finais devem ser amostradas da referência aprovada. As med
 - domain/ValidadorConta.kt: limites e entradas válidas.
 - util/FormatoDinheiro.kt: conversão/formatacão brasileira sem usar Double no cálculo.
 - navigation/NavegacaoConta.kt: chaves e passagem dos dados da Intent.
-- data/ContasExemplo.kt: exemplo local para atender ao requisito de mocks.
+- CalculadoraRateio cria participantes fictícios locais, apresentados como Pessoa 1 até Pessoa N, atendendo ao uso de dados simulados.
 
 Estado permanece nas Activities e em savedInstanceState nesta etapa; não há necessidade de ViewModel, Repository ou banco de dados. Sem variáveis globais para conta ou pagamento.
 
 ## Comportamento a implementar
 
 - Formulário inicia vazio, com 2 pessoas; nome vazio vira null.
-- Usar exemplo preenche R$ 100,00, 3 pessoas e Pizza de sexta.
+- Entrada manual de R$ 100,00, 3 pessoas e Pizza de sexta.
 - Dividir valida as entradas e abre ResultadoActivity por Intent explícita.
 - O resultado calcula 33,33 + 33,33 + 33,34 para o exemplo e começa com todas as pessoas pendentes.
 - O primeiro pago mostrado no mock apenas ilustra o estado confirmado.

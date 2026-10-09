@@ -17,7 +17,7 @@ OWN-WORLD: creme e amarelo manteiga, texto marrom, letreiro popular com copos am
 
 STORY: a pessoa informa conta e participantes, confere parcelas e marca os pagamentos; o contador acompanha sem movimentar dinheiro.
 
-FIRST VIEWPORT: formulário com logo, título, valor, seletor de pessoas, nome opcional e ações inferiores. Resultado com voltar, nome, total, lista na ordem pessoa/estado → parcela → check à direita e botão de editar. A lista rola independentemente da ação de editar. Horizontal usa resumo à esquerda e lista à direita, preservando a ordem de leitura de cada bloco.
+FIRST VIEWPORT: formulário com logo, título, valor, seletor de pessoas, nome opcional e ação Dividir inferior. Resultado com voltar, nome, total, lista na ordem pessoa/estado → parcela → check à direita e botão de editar. A lista rola independentemente da ação de editar. Horizontal usa resumo à esquerda e lista à direita, preservando a ordem de leitura de cada bloco.
 
 FORM: Mesa de amigos, primeira proposta exibida, refinada em mesa-v5; seed key 910c1d83; direção boteco-brasileiro determinada pelo usuário, com prioridade sobre o sorteio.
 

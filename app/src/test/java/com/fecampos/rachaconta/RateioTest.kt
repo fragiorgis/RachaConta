@@ -57,7 +57,6 @@ class RateioTest {
     @Test fun formataEmReaisComCentavos() {
         assertEquals("R$ 33,33", FormatoDinheiro.formatar(3333))
         assertEquals("R$ 99.999,99", FormatoDinheiro.formatar(9999999))
-        assertEquals("100,00", FormatoDinheiro.paraEntrada(10000))
     }
     @Test fun nomeAusenteENormalizado() {
         assertNull(ValidadorConta.validar("100", 3, "  ").conta?.nomeEncontro)

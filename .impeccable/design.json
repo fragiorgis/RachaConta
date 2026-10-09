@@ -299,7 +299,7 @@
         "app/src/main/res/drawable/logo_surface.xml"
       ],
       "evidence": [
-        "docs/screenshots/formulario.png",
+        "docs/screenshots/formulario-vazio.png",
         "docs/screenshots/resultado.png",
         "docs/screenshots/resultado-escuro.png"
       ],
@@ -345,9 +345,6 @@
           "stateListAnimator": null,
           "insetTop": "0dp",
           "insetBottom": "0dp"
-        },
-        "button-text": {
-          "minHeight": "48dp"
         },
         "input-amount": {
           "minHeight": "64dp",
@@ -439,15 +436,7 @@
       "refersTo": "button-primary",
       "description": "Dividir e Editar conta compartilham o mesmo estilo. Prévia em px; altura no Android é mínima.",
       "html": "<button class=\"ds-primary\">Dividir</button>",
-      "css": ".ds-primary{font-family:Nunito,sans-serif;width:100%;min-height:56px;padding:14px 24px;background:#FFE784;color:#3B2519;border:0;border-radius:32px;font-size:20px;font-weight:800;cursor:pointer}.ds-primary:hover,.ds-primary:active{background:#FFE784}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
-    },
-    {
-      "name": "Ação de texto",
-      "kind": "button",
-      "refersTo": "button-text",
-      "description": "Usar exemplo; ação secundária já presente no formulário.",
-      "html": "<button class=\"ds-text\">Usar exemplo</button>",
-      "css": ".ds-text{font-family:Nunito,sans-serif;width:100%;min-height:48px;background:transparent;color:#3B2519;border:0;font-size:16px;font-weight:600;cursor:pointer}.ds-text:hover,.ds-text:active{color:#3B2519}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
+      "css": ".ds-primary{font-family:Nunito,sans-serif;width:100%;min-height:56px;padding:14px 24px;background:#FFE784;color:#3B2519;border:0;border-radius:32px;font-size:20px;font-weight:800;cursor:pointer}.ds-primary:hover,.ds-primary:active{background:#FFE784}.ds-primary:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
     },
     {
       "name": "Valor da conta",
@@ -471,14 +460,14 @@
       "refersTo": "stepper-button",
       "description": "Botões circulares e contador central; prévia visual sem lógica de cálculo.",
       "html": "<div class=\"ds-stepper\"><button class=\"ds-step\" aria-label=\"Diminuir pessoas\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></button><span class=\"ds-count\">3</span><button class=\"ds-step\" aria-label=\"Aumentar pessoas\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></button></div>",
-      "css": ".ds-stepper{display:flex;align-items:center;justify-content:space-between;gap:12px}.ds-step{width:64px;height:64px;background:#FFE784;color:#3B2519;border:0;border-radius:32px;display:grid;place-items:center;cursor:pointer}.ds-count{font-family:Nunito,sans-serif;color:#3B2519;font-size:32px;font-weight:800}.ds-step:hover,.ds-step:active{background:#FFE784}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
+      "css": ".ds-stepper{display:flex;align-items:center;justify-content:space-between;gap:12px}.ds-step{width:64px;height:64px;background:#FFE784;color:#3B2519;border:0;border-radius:32px;display:grid;place-items:center;cursor:pointer}.ds-count{font-family:Nunito,sans-serif;color:#3B2519;font-size:32px;font-weight:800}.ds-step:hover,.ds-step:active{background:#FFE784}.ds-primary:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
     },
     {
       "name": "Voltar",
       "kind": "nav",
       "description": "A navegação local é um único botão com vetor.",
       "html": "<button class=\"ds-back\" aria-label=\"Voltar\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m12 5-7 7 7 7M5 12h15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
-      "css": ".ds-back{display:grid;place-items:center;width:48px;height:48px;padding:0;border:0;background:transparent;color:#3B2519;cursor:pointer}.ds-back:hover,.ds-back:active{color:#3B2519}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
+      "css": ".ds-back{display:grid;place-items:center;width:48px;height:48px;padding:0;border:0;background:transparent;color:#3B2519;cursor:pointer}.ds-back:hover,.ds-back:active{color:#3B2519}.ds-primary:focus-visible,.ds-step:focus-visible,.ds-back:focus-visible{outline:2px solid #9D8C7B;outline-offset:3px}"
     },
     {
       "name": "Parcela pendente",

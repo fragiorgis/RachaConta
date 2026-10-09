@@ -9,7 +9,7 @@ Aplicativo Android para dividir uma conta igualmente entre amigos e marcar quem 
 - Parcelas calculadas em centavos, com soma exata ao total.
 - Checkbox de confirmação à direita de cada pessoa, com Pago/Pendente e contador.
 - Edição da conta e preservação de campos/pagamentos durante recriação da tela.
-- Exemplo local, funcionamento offline, tema claro/escuro e layout horizontal.
+- Funcionamento offline, tema claro/escuro e layout horizontal.
 
 As marcações são manuais e duram durante o fluxo atual; o app não transfere dinheiro nem mantém histórico após encerrar o processo. Uma nova divisão começa com todas as pessoas pendentes. Não há taxa de serviço, API, cadastro ou banco de dados.
 
@@ -17,7 +17,7 @@ As marcações são manuais e duram durante o fluxo atual; o app não transfere 
 
 | Dividir conta | Resultado |
 | --- | --- |
-| ![Formulário](docs/screenshots/formulario.png) | ![Resultado com confirmação](docs/screenshots/resultado.png) |
+| ![Formulário](docs/screenshots/formulario-vazio.png) | ![Resultado com confirmação](docs/screenshots/resultado.png) |
 
 O visual de buteco usa amarelo claro, creme, tipografia arredondada e logo com copos americanos. Referência aprovada em [.impeccable/mocks/mesa-v5.png](.impeccable/mocks/mesa-v5.png).
 
@@ -56,9 +56,10 @@ Duas Activities com ViewBinding e navegação por Intent explícita. O código �
 - **domain:** cálculo e validação.
 - **util:** conversão e formatação de reais.
 - **navigation:** contrato da Intent.
-- **data:** exemplo local simulado.
 
 Ao marcar um pagamento, copy cria um novo modelo e uma nova lista. savedInstanceState preserva os dados da tela; o RecyclerView reutiliza component_parcela_pessoa.xml com binding e ids estáveis.
+
+Os participantes são simulados: a CalculadoraRateio cria ids de 1 até N, e a interface os apresenta como Pessoa 1, Pessoa 2 etc. O valor da conta e a quantidade são informados pelo usuário; não há cadastro ou consulta externa.
 
 Para R$ 100,00 / 3 pessoas, o resultado é R$ 33,33 + R$ 33,33 + R$ 33,34. O cálculo usa Long em centavos, sem ponto flutuante.
 
@@ -88,7 +89,7 @@ Logo e ícone foram produzidos com ImageGen a partir da direção visual aprovad
 | Views conectadas ao Kotlin | ViewBinding exclusivo |
 | Interação atualizando UI | Seletor de pessoas, checks de pagamento e contador |
 | Modelos imutáveis e opcionais | data classes, copy e nomeEncontro: String? |
-| Dados simulados | ContasExemplo e ação Usar exemplo |
+| Dados simulados | Participantes fictícios locais, exibidos como Pessoa 1 até Pessoa N |
 | XML reutilizável opcional | component_parcela_pessoa.xml inflado pelo adapter |
 
 A etapa 2/Compose está fora do escopo. [Enunciado da disciplina](https://github.com/betopompolo/AC322A_MediaTracker/blob/main/docs/Avalia%C3%A7%C3%A3o.md). [MediaTracker de referência](https://github.com/betopompolo/AC322A_MediaTracker).

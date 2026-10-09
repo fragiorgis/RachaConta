@@ -28,10 +28,16 @@ class FluxoTest {
 
     private fun resultado(conta: Conta): Intent = NavegacaoConta.resultado(ApplicationProvider.getApplicationContext<Context>(), conta)
 
-    @Test fun exemploNavegaConfirmaEVoltaMantendoDados() {
+    private fun preencherConta() {
+        onView(withId(R.id.amount_input)).perform(scrollTo(), replaceText("100,00"), closeSoftKeyboard())
+        onView(withId(R.id.more_button)).perform(scrollTo(), click())
+        onView(withId(R.id.name_input)).perform(scrollTo(), replaceText("Pizza de sexta"), closeSoftKeyboard())
+    }
+
+    @Test fun entradaManualNavegaConfirmaEVoltaMantendoDados() {
         ActivityScenario.launch(DividirContaActivity::class.java).use {
-            onView(withId(R.id.example_button)).perform(scrollTo(), click())
-            onView(withId(R.id.divide_button)).perform(scrollTo(), click())
+            preencherConta()
+            onView(withId(R.id.name_input)).perform(pressImeActionButton())
             onView(withId(R.id.total_value)).check(matches(withText("R$ 100,00")))
             onView(withId(R.id.paid_count)).check(matches(withText("0 de 3 pagos")))
             onView(checkPessoa(1)).perform(click())
@@ -63,7 +69,7 @@ class FluxoTest {
     }
     @Test fun formularioPreservaCamposNaRecriacao() {
         ActivityScenario.launch(DividirContaActivity::class.java).use { scenario ->
-            onView(withId(R.id.example_button)).perform(scrollTo(), click())
+            preencherConta()
             scenario.recreate()
             onView(withId(R.id.amount_input)).check(matches(withText("100,00")))
             onView(withId(R.id.name_input)).check(matches(withText("Pizza de sexta")))

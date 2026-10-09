@@ -20,6 +20,5 @@
         </com.google.android.material.textfield.TextInputLayout>
         <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="24dp" android:layout_weight="1" />
         <com.google.android.material.button.MaterialButton android:id="@+id/divide_button" style="@style/Widget.RachaConta.Action" android:text="@string/divide_action" />
-        <com.google.android.material.button.MaterialButton android:id="@+id/example_button" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="8dp" android:text="@string/example_action" android:textFontWeight="600" android:textColor="@color/brown" android:textSize="16sp" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -9,6 +9,7 @@ object CalculadoraRateio {
         val base = conta.valorCentavos / conta.quantidadePessoas
         val resto = (conta.valorCentavos % conta.quantidadePessoas).toInt()
         // Os centavos extras ficam no final, com atribuição estável por pessoa.
+        // Participantes fictícios locais, exibidos como Pessoa 1 até Pessoa N.
         val parcelas = List(conta.quantidadePessoas) { indice ->
             val adicional = if (indice >= conta.quantidadePessoas - resto) 1L else 0L
             ParcelaPessoa(id = indice + 1, valorCentavos = base + adicional)

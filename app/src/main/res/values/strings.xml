@@ -13,7 +13,6 @@
     <string name="meeting_label">Nome do encontro (opcional)</string>
     <string name="meeting_hint">Ex.: Pizza de sexta</string>
     <string name="divide_action">Dividir</string>
-    <string name="example_action">Usar exemplo</string>
     <string name="default_meeting">Conta da turma</string>
     <string name="total_label">Total</string>
     <string name="per_person">Por pessoa</string>

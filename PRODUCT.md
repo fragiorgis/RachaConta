@@ -31,7 +31,7 @@ Uso em celular, em português brasileiro, com valores em reais. O fluxo funciona
 - Cálculo em centavos e distribuição de diferenças de no máximo um centavo entre parcelas.
 - Uma linha por pessoa no resultado, com valor e check reversível para marcar sua parte como paga.
 - Voltar para editar preserva os campos.
-- Dados simulados acessíveis por exemplo local; sem API ou banco de dados.
+- Participantes fictícios gerados localmente (Pessoa 1 até Pessoa N); sem API ou banco de dados. Valor e quantidade são informados pelo usuário.
 - Divisão por consumo individual, Pix, histórico e cadastro ficam para evolução futura.
 - Design da versão 5 aprovado pelo usuário e implementado em duas telas XML com fluxo Kotlin. Evidências em docs/VALIDACAO.md e sistema visual em DESIGN.md.
 

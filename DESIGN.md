@@ -77,9 +77,6 @@ components:
     textColor: "{colors.brown}"
     typography: "{typography.action}"
     rounded: "{rounded.action}"
-  button-text:
-    textColor: "{colors.brown}"
-    typography: "{typography.label}"
   stepper-button:
     backgroundColor: "{colors.yellow}"
     textColor: "{colors.brown}"
@@ -196,7 +193,7 @@ O suporte claro do logo tem raio de 20dp e cor diurna fixa, inclusive no tema es
 
 A ação é ampla, amigável e firme: amarelo manteiga, tinta marrom diurna e texto `action`. `Widget.RachaConta.Action` fornece o raio, a altura mínima e o padding vertical. Dividir e Editar conta são usos do mesmo componente.
 
-O botão de texto Usar exemplo usa Nunito de 16sp, peso 600, texto principal e mínimo de 48dp. Ripple, foco, estados pressionado e desabilitado seguem os controles Material; não há estado hover customizado no código.
+O formulário apresenta somente a ação Dividir. Ripple, foco, estados pressionado e desabilitado seguem os controles Material; não há estado hover customizado no código.
 
 ### Inputs / Fields
 

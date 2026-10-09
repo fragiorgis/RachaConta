@@ -25,5 +25,4 @@ object FormatoDinheiro {
         return "R$ " + formato.format(BigDecimal.valueOf(centavos, 2))
     }
 
-    fun paraEntrada(centavos: Long): String = BigDecimal.valueOf(centavos, 2).toPlainString().replace('.', ',')
 }
