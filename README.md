@@ -27,7 +27,7 @@ O visual de buteco usa amarelo claro, creme, tipografia arredondada e logo com c
 2. Clone o repositório e abra **a pasta raiz**, que contém settings.gradle.kts.
 3. No SDK Manager, instale **Android SDK Platform 37** e os Build Tools solicitados pelo Gradle.
 4. Use **JDK 25** para o Gradle. O projeto inclui critérios do daemon e resolver de toolchains para baixar o JDK quando necessário.
-5. Aguarde a sincronização e execute o módulo **app** em um emulador ou celular com **Android 13/API 33 ou superior**.
+5. Aguarde a sincronização e execute o módulo **app** em um emulador com **Android 13/API 33 ou superior**. A validação foi realizada no Medium_Phone com Android 17/API 37.1.
 
 O Android Studio configura local.properties com o caminho do seu SDK. Esse arquivo é específico da máquina e não é versionado. Nenhum segredo ou arquivo .env é necessário.
 
@@ -39,7 +39,7 @@ No terminal, com JAVA_HOME e ANDROID_HOME configurados:
 ./gradlew connectedDebugAndroidTest
 ```
 
-No Windows, use gradlew.bat. O último comando precisa de um emulador iniciado ou dispositivo conectado.
+No Windows, use gradlew.bat. O último comando precisa de um emulador iniciado.
 
 APK gerado: app/build/outputs/apk/debug/app-debug.apk. Para instalar:
 
