@@ -1,10 +1,10 @@
 plugins { id("com.android.application") }
 
 android {
-    namespace = "com.fecampos.rachaconta"
+    namespace = "com.fragiorgis.rachaconta"
     compileSdk { version = release(37) }
     defaultConfig {
-        applicationId = "com.fecampos.rachaconta"
+        applicationId = "com.fragiorgis.rachaconta"
         minSdk = 33
         targetSdk = 37
         versionCode = 1
